@@ -9,6 +9,7 @@
 1. Only points with non-zero values in at least one of the three channels (ecal, hcal, or tracks) were used as nodes in the graph, along with normalized coordinates as additional features.  
 2. The graph was constructed using the k-Nearest Neighbor (kNN) method, based on the coordinates of the nodes.  
 3. Nodes were sorted based on their coordinates to establish a canonical ordering of nodes.  
+4. The model was trained on a subset of the entire dataset (40000 datapoints)
 
 ## Experiments  
 
@@ -23,7 +24,7 @@
 3. Coordinate-based sorting effectively simplified the loss calculation since a graph matching algorithm was not needed.  
 4. Masking-based loss contributed to stable training across graphs with different sizes by focusing on the most relevant nodes.  
 5. However, the canonical ordering introduced artifacts, notably a horizontal line of points. This occurred because the model learned the sorted ordering, and the mask consistently selected the first \( n \) nodes.  
-6. Structural Similarity Index Measure (SSIM) was used as the evaluation metric to assess the reconstruction quality, providing insight into how well the spatial structures were preserved.  
+6. Structural Similarity Index Measure (SSIM) was used as the evaluation metric to assess the reconstruction quality, providing insight into how well the spatial structures were preserved but other metrics such as Peak SNR can also be used for evaluation of the reconstructed samples  
 
 ## Training Loss Curve
 
