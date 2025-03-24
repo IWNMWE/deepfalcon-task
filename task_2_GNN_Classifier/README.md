@@ -16,7 +16,7 @@
 ## Inference and Observations
 
 1. The accuracy of each model, except SAGEConv, increased with higher k values but does not vary by much.
-2. The maximum recorded accuracy was 71.8% using the GAT-Classifier after 60 epochs.
+2. The maximum recorded accuracy was 71.8% using the GAT-Classifier after 60 epochs.GCN and GAT may often outperform SAGEConv because GCN efficiently aggregates neighborhood information using spectral convolutions, while GAT uses attention mechanisms to focus on the most relevant neighbors, leading to better feature representation. SAGEConv, though more scalable, may lack the adaptivity and expressiveness needed for accurate reconstruction.
 
 ## Performance Comparison(Global Features)
 
