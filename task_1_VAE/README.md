@@ -35,9 +35,9 @@
 7. Further tuning of the β factor(cyclic β scheduler), using advanced loss functions might help mitigate the noise and improve reconstruction quality.
 
 ## Reconstructions
-
+VAE reconstruction without any final activation: 
 ![VAE without any final activation](./images/recon1.png)
-
+VAE reconstruction with final activation as ReLU: 
 ![VAE with final activation as ReLU](./images/recon2.png)
 
 
