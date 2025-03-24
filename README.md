@@ -8,6 +8,8 @@ The dataset consists of 125x125 images with three channels:
 - **HCAL**  
 - **Tracks**  
 
+Along with features 'm0'(mass), 'pt'(transverse momentum), 'y'(labels for quark and gluon jet)
+
 ## Tasks Overview  
 
 ### **Common Task 1: Variational Autoencoder (VAE)**  
