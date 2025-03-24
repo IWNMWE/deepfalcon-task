@@ -2,7 +2,9 @@
 
 1. An encoder-decoder model was used, with the encoder consisting of graph convolution or attention layers (GAT, GCN, or SAGEConv) and the decoder comprising linear layers.  
 2. The model outputs the reconstructed features for a maximum number of nodes.  
-3. A reconstruction loss for the features, with masking applied to the first \( n \) nodes in a graph, was used as the primary loss function.  
+3. A reconstruction loss for the features, with masking applied to the first \( n \) nodes in a graph, was used as the primary loss function.
+
+**Note :** The generated architecture graph can be found in the images directory. 
 
 ## Data Preprocessing  
 

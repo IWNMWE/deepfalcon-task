@@ -5,6 +5,8 @@
 3. The decoder used transposed convolution layers to reconstruct the input from the latent representation.
 4. Experiments with different model depths and output activation functions (e.g., ReLU, Leaky ReLU) were conducted.
 
+**Note :** The generated architecture graph can be found in the images directory. 
+
 ## Data Preprocessing
 
 1. Data was extracted and placed as a dataset on Kaggle for training.
