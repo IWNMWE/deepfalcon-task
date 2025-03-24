@@ -3,7 +3,6 @@
 1. The model is an encoder-decoder VAE with convolutional layers in both the encoder and decoder, and linear layers for the mean and log variance outputs.
 2. A combination of reconstruction loss and KL divergence loss for a Gaussian prior was used to train the model.
 3. The decoder used transposed convolution layers to reconstruct the input from the latent representation.
-4. Experiments with different model depths and output activation functions (e.g., ReLU, Leaky ReLU) were conducted.
 
 **Note :** The generated architecture graph can be found in the images directory. 
 
@@ -12,7 +11,7 @@
 1. Data was extracted and placed as a dataset on Kaggle for training.
 2. Images were resized to either 128x128 or 64x64 for faster computation and efficient memory usage.
 3. Min-max normalization was applied to scale pixel values between 0 and 1.
-4. Training was performed on a subset of the dataset, using between 10,000 and 60,000 samples.
+5. Training was performed on a subset of the dataset, using between 10,000 and 60,000 samples.
 
 ## Experiments
 
@@ -24,7 +23,7 @@
 2. The latent space size was varied across experiments, with values ranging from 16 to 256.
 3. Beta-VAE experiments were performed, where the KL divergence term was weighted using a β factor to encourage disentanglement.
 4. Beta schedulers were implemented to gradually increase the β value during training.
-5. Different convolutional layer depths were experimented with to balance model complexity and reconstruction quality.
+5. Experiments with different model depths and output activation functions (e.g., ReLU, Leaky ReLU) were conducted.
 
 ## Inferences
 
