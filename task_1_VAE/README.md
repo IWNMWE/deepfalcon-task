@@ -20,6 +20,7 @@
     - Weighted MSE (to increase importance of regions with higher activity)
     - Multi-Scale Structural Similarity Index (MSSIM)
     - Weighted MSE + MSSIM
+    - Weighted MSE + |Total Energy of reconstructed channel - Total Energy of original|
 2. The latent space size was varied across experiments, with values ranging from 16 to 256.
 3. Beta-VAE experiments were performed, where the KL divergence term was weighted using a β factor to encourage disentanglement.
 4. Beta schedulers were implemented to gradually increase the β value during training.
