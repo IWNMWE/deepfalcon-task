@@ -1,6 +1,6 @@
 ## Architecture  
 
-1. An encoder-decoder model was used, with the encoder consisting of graph convolution or attention layers (GAT, GCN, or SAGEConv) generating a graph level latent after pooling and the decoder comprising linear layers.  
+1. An encoder-decoder model was used, with the encoder consisting of graph convolution or attention layers (GAT, GCN, or SAGEConv) generating **a graph level latent after pooling** and the decoder comprising linear layers.  
 2. The model outputs the reconstructed features for a maximum number of nodes.  
 3. A reconstruction loss for the features, with masking applied to the first \( n \) nodes in a graph, was used as the primary loss function.
 
@@ -17,7 +17,7 @@
 
 - Varying the types of layers in the model encoder, including GAT, GCN, and SAGEConv.  
 - Adjusting the latent dimension of the model to analyze its effect on reconstruction quality.  
-- Applying weighted channel losses for MSE to emphasize non-zero channels during reconstruction.  
+- Applying weighted channel losses for MSE to emphasize certain channels during reconstruction.  
 
 ## Observations and Inferences  
 
