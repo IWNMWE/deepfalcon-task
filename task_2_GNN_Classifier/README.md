@@ -7,6 +7,7 @@
 
 1. In each model, global features were appended after pooling, including m0 and pt features.
 2. Binary Cross Entropy (BCE) loss was used for training.
+3. A model with 3 GNN layer with global pooling followed by 4 Linear layers was used for teh classification task. 
 
 ## Additional Experiments
 
