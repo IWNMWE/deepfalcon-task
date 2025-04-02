@@ -28,6 +28,6 @@ Along with features 'm0'(mass), 'pt'(transverse momentum), 'y'(labels for quark 
 
 ## Results  
 - Visual comparisons of original vs. reconstructed events are available.  
-- Performance metrics and observations/inferences are documented.
+- Performance metrics and observations/inferences are documented in the corresponding task files.
 
 Applying for :- **“Graph Representation Learning for Fast Detector Simulation”**  project
